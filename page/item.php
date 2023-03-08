@@ -9,7 +9,7 @@
 
 
 <?php 
-$sql = "SELECT * FROM `sh_items_info` WHERE `Id`='$path_exp[4]'";
+$sql = "SELECT * FROM `sh_items_info` WHERE `Id`='$path_exp[3]'";
 $result = $con->query($sql);
 if ($result->num_rows > 0) {
 	$row = $result->fetch_assoc();
@@ -17,8 +17,8 @@ if ($result->num_rows > 0) {
 	$Item_Description=$row["Description"];
 }
 
-if(isset($path_exp[5]) && $path_exp["5"]>"0"){
-	$sql = "SELECT * FROM `sh_sell_by_item` WHERE `Id`='$path_exp[5]'";
+if(isset($path_exp[4]) && $path_exp["4"]>"0"){
+	$sql = "SELECT * FROM `sh_sell_by_item` WHERE `Id`='$path_exp[4]'";
 	$result = $con->query($sql);
 	$seller_num=$result->num_rows;
 	if ($result->num_rows > 0) {

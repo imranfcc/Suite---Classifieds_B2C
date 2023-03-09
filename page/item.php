@@ -67,7 +67,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 						<div class="mt-4">Sold by<?php echo $row2["[sh_sell_by]Id"]; ?> <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
 						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');">Add to Cart</button>
 						<div><i class="fas fa-check text-success"></i> <strong class="text-success">Free</strong> shipping</div>
-						<div><i class="fas fa-check text-success"></i> <strong class="text-success">30 dagen</strong> bedenktijd</div>
+						<div><i class="fas fa-check text-success"></i> <strong class="text-success">7 days</strong> Returns</div>
 					<?php } else { ?>
 						<div class="font-weight-bold text-danger" style="font-size:160%;">Out of stock</div>
 						<div class="mt-4">Sold by <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>

@@ -47,7 +47,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 			<div class="col-12 px-1" >
 				<div style="font-weight: bold; font-size:140%;"><?php echo $Item_Title; ?></div>
 				<div style="font-size:90%;">
-					Brand: <a href="<?php echo $path_exp["1"]."/b/".\P\Brand\brandID_to_Name($row["[sh_pl_brand_names]Id"])."/".$row["[sh_pl_brand_names]Id"]; ?>"><?php echo \P\Brand\brandID_to_Name($row["[sh_pl_brand_names]Id"]); ?></a>
+					Brand: <a href="<?php echo "/b/".\P\Brand\brandID_to_Name($row["[sh_pl_brand_names]Id"])."/".$row["[sh_pl_brand_names]Id"]; ?>"><?php echo \P\Brand\brandID_to_Name($row["[sh_pl_brand_names]Id"]); ?></a>
 					|
 					<i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> <i class="far fa-star"></i> review
 					|

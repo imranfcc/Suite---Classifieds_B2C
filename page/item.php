@@ -65,13 +65,13 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 						<div class="font-weight-bold" style="font-size:160%;"><?php echo sh_amount($row2["Price"]); ?></div><br>
 						<?php if($row2["DeliveryTime"]=="1-8wd"){ ?><span class="text-success">1 - 2 weeks</span><?php } ?>
 						<div class="mt-4">Sold by<?php echo $row2["[sh_sell_by]Id"]; ?> <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
-						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('<?php echo $path_exp['1']; ?>/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');">In winkelwagen</button>
-						<div><i class="fas fa-check text-success"></i> <strong class="text-success">Gratis</strong> verzending</div>
+						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');">Add to Cart</button>
+						<div><i class="fas fa-check text-success"></i> <strong class="text-success">Free</strong> shipping</div>
 						<div><i class="fas fa-check text-success"></i> <strong class="text-success">30 dagen</strong> bedenktijd</div>
 					<?php } else { ?>
-						<div class="font-weight-bold text-danger" style="font-size:160%;">Niet leverbaar</div>
-						<div class="mt-4">Sold by <a href="<?php echo $path_exp["1"]."/v/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
-						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('<?php echo $path_exp['1']; ?>/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');" disabled>In winkelwagen</button>
+						<div class="font-weight-bold text-danger" style="font-size:160%;">Out of stock</div>
+						<div class="mt-4">Sold by <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
+						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');" disabled>Add to Cart</button>
 
 
 					<?php } ?>

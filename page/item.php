@@ -64,7 +64,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 					<?php if($row2["Quantity"]>"0"){  // Yes there is in stock ?>
 						<div class="font-weight-bold" style="font-size:160%;"><?php echo sh_amount($row2["Price"]); ?></div><br>
 						<?php if($row2["DeliveryTime"]=="1-8wd"){ ?><span class="text-success">1 - 2 weeks</span><?php } ?>
-						<div class="mt-4">Sold by <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
+						<div class="mt-4">Sold by<?php echo $row2["[sh_sell_by]Id"]; ?> <a href="<?php echo "/s/".suite\sellerID_to_Name($row2["[sh_sell_by]Id"])."/".$row2["[sh_sell_by]Id"];?>"><?php echo suite\sellerID_to_Name($row2["[sh_sell_by]Id"]); ?></a></div>
 						<button type="button" class="btn btn-primary btn-master btn-lg btn-block mt-4" onclick="sh_load_url('<?php echo $path_exp['1']; ?>/item_AddToCart?AddItemId=<?php echo $itemInfo['Id']; ?>','#sh-Modal-Ajax');">In winkelwagen</button>
 						<div><i class="fas fa-check text-success"></i> <strong class="text-success">Gratis</strong> verzending</div>
 						<div><i class="fas fa-check text-success"></i> <strong class="text-success">30 dagen</strong> bedenktijd</div>

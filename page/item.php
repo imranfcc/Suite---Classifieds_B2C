@@ -77,12 +77,12 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 					<?php } ?>
 				</div>
 				<br>
-				<strong>Andere verkopers (<?php echo \suite\item_seller_count($path_exp[4]); ?>)</strong>
-				<div><a href=""><i class="fas fa-chevron-right"></i> Bekijk en verglijk alle verkopers</a></div>
+				<strong>Andere verkopers (<?php echo \suite\item_seller_count($path_exp[3]); ?>)</strong>
+				<div><a href=""><i class="fas fa-chevron-right"></i> View and compare all sellers</a></div>
 				<br>
 			</div>
 			<div class="col-12 px-1">
-				<div class=" font-weight-bold mb-2" style="font-size:150%">Beschrijving</div>
+				<div class=" font-weight-bold mb-2" style="font-size:150%">Description</div>
 				<p class="mb-3" style="font-size:90%;"><?php echo $Item_Description; ?></p>
 			</div>
 		</div>

@@ -56,7 +56,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-lg-7">
+			<div class="col-12 col-lg-7 px-1 mb-2">
 				<img src="https://via.placeholder.com/1000x1000.png" alt="Los Angeles" class="d-block" style="width:100%">
 			</div>
 			<div class="col-12 col-lg-5 px-1">

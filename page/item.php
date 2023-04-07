@@ -57,7 +57,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 		</div>
 		<div class="row">
 			<div class="col-12 col-lg-7">
-				<img  src="img/space.png"  onclick="location.href='<?php echo $obj->link; ?>'" style=" width:100%; background-image:url('img/Plugin/Items_info/1/handgel_photoshop.jpg'); background-position: center; background-repeat: no-repeat; background-size: contain;">
+				<img src="https://via.placeholder.com/1000x1000.png" alt="Los Angeles" class="d-block" style="width:100%">
 			</div>
 			<div class="col-12 col-lg-5 px-1">
 				<div class="rounded  p-1" style="border:1px solid #dee2e6;">

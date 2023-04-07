@@ -20,7 +20,7 @@
                     <a href="my/dashboard"><i class="fad fa-user fa-2x px-2"  style="color:var(--master-color-opposite, #ffffff);" ></i></a>
                     <a href="my/favourites" class="d-none"><i class="far fa-heart fa-2x px-2" style="color:var(--master-color-opposite, #ffffff);"></i></a>
                     <?php if(function_exists("\P\Cart\count_qty")){ ?>
-                        <a href="nl/cart"><i class="fad fa-shopping-cart fa-2x " style="color:var(--master-color-opposite, #ffffff);" ></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"><?php echo \P\Cart\count_qty(); ?></span></i></a>
+                        <a href="nl/cart"><i class="fad fa-shopping-cart fa-2x " style="color:var(--master-color-opposite, #ffffff);" ></i><span class="position-absolute top-12 start-85 translate-middle badge rounded-pill bg-success"><?php echo \P\Cart\count_qty(); ?></span></i></a>
                     <?php } ?>
                 </span>
             </div>

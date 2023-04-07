@@ -77,7 +77,7 @@ if(isset($path_exp[4]) && $path_exp["4"]>"0"){
 					<?php } ?>
 				</div>
 				<br>
-				<strong>Andere verkopers (<?php echo \suite\item_seller_count($path_exp[3]); ?>)</strong>
+				<strong>Other sellers (<?php echo \suite\item_seller_count($path_exp[3]); ?>)</strong>
 				<div><a href=""><i class="fas fa-chevron-right"></i> View and compare all sellers</a></div>
 				<br>
 			</div>
